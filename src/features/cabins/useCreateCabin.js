@@ -10,7 +10,6 @@ export function useCreateCabin() {
     mutationFn: createEditCabin,
     onSuccess: () => {
       toast.success("New cabin successfully created");
-
       queryClient.invalidateQueries({
         queryKey: ["cabin"],
       });
@@ -18,8 +17,5 @@ export function useCreateCabin() {
     onError: (err) => toast.error(err.message),
   });
 
-  return {
-    isCreating,
-    createCabin,
-  };
+  return { isCreating, createCabin };
 }
