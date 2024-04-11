@@ -145,7 +145,7 @@ img {
 }
 
 
-FOR DARK MODE
+// FOR DARK MODE
 
 --color-grey-0: #18212f;
 --color-grey-50: #111827;
