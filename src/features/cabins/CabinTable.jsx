@@ -26,7 +26,6 @@ function CabinTable() {
 
   // 2) SORT
   let sortBy = searchParams.get("sortBy") || "startDate-asc";
-  console.log(sortBy);
   const [field, direction] = sortBy.split("-");
   const modifier = direction === "asc" ? 1 : -1;
   const sortedCabins = filteredCabins.sort(
